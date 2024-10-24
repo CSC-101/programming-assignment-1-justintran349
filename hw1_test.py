@@ -80,8 +80,10 @@ class TestCases(unittest.TestCase):
         expected = "123s by John Doe"
         self.assertEqual(expected, result)
     # Part 7
-
-
+    def test_circle_bound_1(self):
+        input(3.5,3.0)
+        result = hw1.circle_bound(input)
+        expected = 3.20
     # Part 8
     def below_average_pay_1(self):
         input("George", 45)("bob", 35)
