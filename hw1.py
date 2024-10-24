@@ -39,10 +39,11 @@ def add_prices(price1, price2):
     return data.Price(dollars,cents)
 #gets inputed dollars and cents, turns it into the total price in dollars
 
-
 # Part 5
-
-
+def rectangle_area(rectangle1):
+    return ((rectangle1.top_left.y - rectangle1.bottom_right.y) *
+            (rectangle1.bottom_right.x - rectangle1.top_left.x))
+#gets inputed a rectangle and it finds the distance from the 2 points
 # Part 6
 
 

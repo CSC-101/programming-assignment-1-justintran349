@@ -50,14 +50,23 @@ class TestCases(unittest.TestCase):
         expected = 6
         self.assertEqual(expected, result)
 
-    def test_add_prices_1(self):
+    def test_add_prices_2(self):
         input(4,350)
         result = hw1.add_prices(input)
         expected = 7.50
         self.assertEqual(expected, result)
     # Part 5
+    def test_rectangle_area_1(self):
+        input(1,5)(6,1)
+        result = hw1.rectangle_area(input)
+        expected = 20
+        self.assertEqual((expected, result))
 
-
+    def test_rectangle_area_2(self):
+        input(2,5)(4,1)
+        result = hw1.rectangle_area(input)
+        expected = 9
+        self.assertEqual((expected, result))
     # Part 6
 
 
