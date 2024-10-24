@@ -1,3 +1,5 @@
+from curses.textpad import rectangle
+
 import data
 
 # Write your functions for each part in the space below.
@@ -55,8 +57,23 @@ def books_by_author(name:str, books: list):
 #gets inputed a author name and a list of their books and checks if they match, if it does they append
 #the book to a new list and returns it.
 # Part 7
-
-
+def circle_bound(rectangle):
+    diameter = (rectangle.top_left.y - rectangle.bottom_right.y)**2 + (rectangle.bottom_right.x - rectangle.top_left.x)**2)/2
+    radius = diameter/2
+    center_y = rectangle.top_left.y - (rectangle.top_left.y - rectangle.bottom_right.x - rectangle.top_left.x)/2
+    center_x = rectangle.bottom_right.x - (rectangle.bottom_right.x - rectangle.top_left.x)/2
+    return data.Circle(data.Point(center_x,center_y),radius)
+#finds the radius using the center_x and center_y and the diameter
 # Part 8
-
-
+def below_pay_average(employees:list)->list:
+    lists = []
+    sum = 0
+    for i in range(len(employees)):
+        sum += employees[i].pay_rate
+    average = sum / len(employees)
+    for i in range(len(employees)):
+        if employees[i].pay_rate < average:
+            lists.append(employees[i].name)
+    print("Average:", average)
+    return lists
+#finds which employees have a below average wage

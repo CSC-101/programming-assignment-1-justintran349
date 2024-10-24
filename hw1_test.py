@@ -68,13 +68,13 @@ class TestCases(unittest.TestCase):
         expected = 9
         self.assertEqual((expected, result))
     # Part 6
-    def test_books_by_author(self):
+    def test_books_by_author_1(self):
         input("ABCs", ["John Doe"])
         result = hw1.books_by_author(input)
         expected = "ABCs by John Doe"
         self.assertEqual(expected, result)
 
-    def test_books_by_author(self):
+    def test_books_by_author_2(self):
         input("123s", ["John Doe"])
         result = hw1.books_by_author(input)
         expected = "123s by John Doe"
@@ -83,8 +83,8 @@ class TestCases(unittest.TestCase):
 
 
     # Part 8
-
-
+def below_average_pay_1
+    input()
 
 
 
