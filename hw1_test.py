@@ -44,8 +44,17 @@ class TestCases(unittest.TestCase):
         expected = [[1,3], [4,5]]
         self.assertEqual(expected, result)
     # Part 4
+    def test_add_prices_1(self):
+        input(3,300)
+        result = hw1.add_prices(input)
+        expected = 6
+        self.assertEqual(expected, result)
 
-
+    def test_add_prices_1(self):
+        input(4,350)
+        result = hw1.add_prices(input)
+        expected = 7.50
+        self.assertEqual(expected, result)
     # Part 5
 
 

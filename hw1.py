@@ -30,6 +30,14 @@ def ascending_pairs(lists: list) -> list:
     return list1
 #function gets a nested list and if the len is = 2 it will swap index if the first is greater than the second.
 # Part 4
+def add_prices(price1, price2):
+    dollars = price1.dollars + price2.dollars
+    cents = price1.cents + price2.cents
+    while cents>100:
+        cents-=100
+        dollars+=1
+    return data.Price(dollars,cents)
+#gets inputed dollars and cents, turns it into the total price in dollars
 
 
 # Part 5
