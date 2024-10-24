@@ -83,10 +83,17 @@ class TestCases(unittest.TestCase):
 
 
     # Part 8
-def below_average_pay_1
-    input()
+    def below_average_pay_1(self):
+        input("George", 45)("bob", 35)
+        result = hw1.below_pay_average(input)
+        expected = 40
+        self.assertEqual(expected,result)
 
-
+    def below_average_pay_2(self):
+        input("George", 55)("bob", 45)
+        result = hw1.below_pay_average(input)
+        expected = 50
+        self.assertEqual(expected,result)
 
 if __name__ == '__main__':
     unittest.main()

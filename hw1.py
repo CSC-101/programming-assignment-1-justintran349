@@ -57,12 +57,14 @@ def books_by_author(name:str, books: list):
 #gets inputed a author name and a list of their books and checks if they match, if it does they append
 #the book to a new list and returns it.
 # Part 7
+import math
 def circle_bound(rectangle):
-    diameter = (rectangle.top_left.y - rectangle.bottom_right.y)**2 + (rectangle.bottom_right.x - rectangle.top_left.x)**2)/2
-    radius = diameter/2
-    center_y = rectangle.top_left.y - (rectangle.top_left.y - rectangle.bottom_right.x - rectangle.top_left.x)/2
-    center_x = rectangle.bottom_right.x - (rectangle.bottom_right.x - rectangle.top_left.x)/2
-    return data.Circle(data.Point(center_x,center_y),radius)
+    diagonal = math.sqrt((rectangle.top_left.y - rectangle.bottom_right.y) ** 2 +
+                         (rectangle.bottom_right.x - rectangle.top_left.x) ** 2)
+    radius = diagonal / 2
+    center_y = (rectangle.top_left.y + rectangle.bottom_right.y) / 2
+    center_x = (rectangle.top_left.x + rectangle.bottom_right.x) / 2
+    return data.Circle(data.Point(center_x, center_y), radius)
 #finds the radius using the center_x and center_y and the diameter
 # Part 8
 def below_pay_average(employees:list)->list:
