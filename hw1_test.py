@@ -60,7 +60,7 @@ class TestCases(unittest.TestCase):
         input(1,5)(6,1)
         result = hw1.rectangle_area(input)
         expected = 20
-        self.assertEqual((expected, result))
+        self.assertEqual(expected, result)
 
     def test_rectangle_area_2(self):
         input(2,5)(4,1)
@@ -68,8 +68,17 @@ class TestCases(unittest.TestCase):
         expected = 9
         self.assertEqual((expected, result))
     # Part 6
+    def test_books_by_author(self):
+        input("ABCs", ["John Doe"])
+        result = hw1.books_by_author(input)
+        expected = "ABCs by John Doe"
+        self.assertEqual(expected, result)
 
-
+    def test_books_by_author(self):
+        input("123s", ["John Doe"])
+        result = hw1.books_by_author(input)
+        expected = "123s by John Doe"
+        self.assertEqual(expected, result)
     # Part 7
 
 

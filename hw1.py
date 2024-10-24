@@ -45,8 +45,15 @@ def rectangle_area(rectangle1):
             (rectangle1.bottom_right.x - rectangle1.top_left.x))
 #gets inputed a rectangle and it finds the distance from the 2 points
 # Part 6
-
-
+def books_by_author(name:str, books: list):
+    listone = []
+    for i in books:
+        for one in range(len(i.authors)):
+            if name in i.authors[1]:
+                listone.append[i.title]
+    return listone
+#gets inputed a author name and a list of their books and checks if they match, if it does they append
+#the book to a new list and returns it.
 # Part 7
 
 
