@@ -12,6 +12,12 @@ class TestCases(unittest.TestCase):
         result = hw1.vowel_count(input)
         expected = 2
         self.assertEqual(expected, result)
+    def test_vowel_count_2(self):
+        input = 'window'
+        result = hw1.vowel_count(input)
+        expected = 2
+        self.assertEqual(expected, result)
+
     # Part 2
 
 
