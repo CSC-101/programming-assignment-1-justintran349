@@ -7,8 +7,11 @@ import unittest
 
 class TestCases(unittest.TestCase):
     # Part 1
-
-
+    def test_vowel_count_1(self):
+        input = 'hello'
+        result = hw1.vowel_count(input)
+        expected = 2
+        self.assertEqual(expected, result)
     # Part 2
 
 
